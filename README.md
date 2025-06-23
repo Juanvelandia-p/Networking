@@ -51,7 +51,7 @@ After saving the HTML, the server sends a basic HTTP response back to the browse
 ![Closing Socket](resources/exercise2CloseSocket.png)
 
 
-## Output
+### Output
 
 -First we run the program:
 ![alt text](resources/excercise2Example0.png)
@@ -64,8 +64,20 @@ After saving the HTML, the server sends a basic HTTP response back to the browse
 - The HTML content of the specified URL is saved as a local file named `resultado.html`.
 - This file can be opened manually in a web browser to view the downloaded page.
 
-## Notes
+### Notes
 
 - The server does not use threads or any form of concurrency, as per the assignment instructions.
 - The application only handles one connection at a time and is designed for local use and testing purposes.
+
+
+## Excercise 4.3.1
+This excercise consists in write a server that recieves a number, and returns its square 
+
+So we are gonna to take the code seen on the guide, server and client, so to he first, we going to write 2 classes
+
+### Java Server
+This server open a socket, process the request, and then returns the square of the number using generic and lambda expresions for the calculations
+
+### Java client
+This a java client that just send requests and prints the server reponses
 
