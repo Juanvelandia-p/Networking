@@ -1,24 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>URL Reader</title>
-</head>
+<head><title>Descargar HTML</title></head>
 <body>
-    <div class="form-container">
-        <h2>URL Reader</h2>
-        <p>Ingrese la URL que desea procesar:</p>
-        <form onsubmit="return false;">
-            <input type="url" id="urlInput" placeholder="https://www.example.com" required>
-            <button onclick="openURL()">Procesar URL</button>
-        </form>
-    </div>
-
-    <script>
-        function openURL() {
-            const url = document.getElementById('urlInput').value;
-            window.location.href = `java -cp ../target/classes edu.escuelaing.arsw.Excersise2 "${url}"`;
-            return false;
-        }
-    </script>
+    <h2>Ingresa una URL</h2>
+    <form method="GET" action="http://localhost:8080/descargar">
+        <input type="text" name="url" placeholder="https://example.com" size="60" required>
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
